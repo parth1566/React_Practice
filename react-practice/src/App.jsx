@@ -1,16 +1,20 @@
 import { useState } from "react";
-import MessageBox from "./Day3/MessageBox";
-import CharCounter from "./Day3/CharCounter";
+import CelsiusInput from "./Day3/CelsiusInput";
+import FahrenheitInput from "./Day3/FahrenheitInput";
+
 
 
 function App() {
-    const[message, setMessage] = useState("");
-    return (
-    <div className="message-container">
-      <MessageBox setMessage = {setMessage} />
-      <CharCounter message = {message} />
-    </div>
-    )
+
+  const[celsius, setCelsius] = useState("");
+    return(
+     <div className="temp-container">
+  <h1 className="temp-title">🌡️ Temperature Converter</h1>
+  <CelsiusInput celsius={celsius} setCelsius={setCelsius} />
+  <p className="temp-divider">⇅</p>
+  <FahrenheitInput celsius={celsius} setCelsius={setCelsius} />
+</div>
+  )
 }
 
 export default App
