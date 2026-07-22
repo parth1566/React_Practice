@@ -1,0 +1,60 @@
+.grade-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 40px 55px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 100px auto;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.grade-title {
+  color: #f8fafc;
+  font-size: 26px;
+  margin: 0 0 25px 0;
+}
+
+.grade-input {
+  font-size: 18px;
+  padding: 12px 20px;
+  width: 220px;
+  border: 2px solid #475569;
+  border-radius: 12px;
+  background-color: #0f172a;
+  color: #38bdf8;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.grade-input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.grade-result {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+  animation: popIn 0.35s ease;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Grade colors */
+.grade-a { color: #10b981; }
+.grade-b { color: #38bdf8; }
+.grade-c { color: #f59e0b; }
+.grade-f { color: #ef4444; }
+.grade-empty { color: #94a3b8; }

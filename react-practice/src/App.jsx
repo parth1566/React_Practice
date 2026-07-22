@@ -1,12 +1,12 @@
 import { useState } from "react";
-import AuthButton from "./Day3/AuthButton";
+import GradeCard from "./Day3/GradeCard";
 
 
 function App() {
   
   return(
     <div>
-        <AuthButton/>
+        <GradeCard/>
     </div>
   )
   
