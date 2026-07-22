@@ -1,0 +1,64 @@
+/* Counter container */
+.counter-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 80px auto;
+}
+
+/* Count number */
+.count-display {
+  font-size: 80px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin: 0 0 25px 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+/* Buttons row */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* All buttons */
+.button-group button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: white;
+}
+
+.button-group button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.button-group button:active {
+  transform: scale(0.95);
+}
+
+/* +1 button - green */
+.btn-plus {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+/* -1 button - red */
+.btn-minus {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+/* Reset - gray */
+.btn-reset {
+  background: linear-gradient(90deg, #475569, #64748b);
+}
