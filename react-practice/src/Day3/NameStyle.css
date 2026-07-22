@@ -1,0 +1,42 @@
+/* Page section container */
+.name-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 80px auto;
+}
+
+/* Input field */
+.name-input {
+  font-size: 17px;
+  padding: 12px 20px;
+  width: 300px;
+  border: 2px solid #475569;
+  border-radius: 12px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input glow on focus */
+.name-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.name-input::placeholder {
+  color: #64748b;
+}
+
+/* Greeting text */
+.name-greeting {
+  color: #f8fafc;
+  font-size: 32px;
+  margin-top: 25px;
+  font-family: 'Segoe UI', sans-serif;
+}
