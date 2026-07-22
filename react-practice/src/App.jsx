@@ -1,6 +1,7 @@
 import { useState } from 'react';
 // import Counter from './Day2/Counter';
-import Toggle from './Day2/Toggle';
+// import Toggle from './Day2/Toggle';
+import VoteButton from './Day2/VoteButton';
 
 // import UserCard from './Day1/UserCard';
 // import viratPic from './assets/virat.png'
@@ -20,6 +21,12 @@ function App() {
     //   <UserCard name = "Rohit Sharma" image = {rohitPic} desc = "Hit-Man" age = {39} isCaptain = {true}/>
     //   <UserCard name = "MS Dhoni" image = {dhoniPic} desc = "Captain-Cool" age = {45}/>
     // </div>
+    const [votes, setVotes] = useState(0);
+    const [lastVoted, setLastVoted] = useState("");
+    const handleVote = (name) => {
+    setVotes(votes + 1);
+    setLastVoted(name);
+};
     return (
     // <div className="container">
     //   {players.map((player) => (
@@ -35,9 +42,19 @@ function App() {
     // </div>
     <div>
       {/* <Counter/> */}
-      <Toggle/>
-    </div>
-)
-}
+      {/* <Toggle/> */}
+      <div className="vote-container">
+        <h2 className="vote-stats">Total Votes: <span>{votes}</span></h2>
+        <p className="last-voted">Last Vote: <span>{lastVoted}</span></p>
+  <div className="vote-buttons">
+    <VoteButton playerName="Virat" onVote={handleVote} />
+    <VoteButton playerName="Rohit" onVote={handleVote} />
+    <VoteButton playerName="Dhoni" onVote={handleVote} />
+  </div>
+</div>
 
+    </div>
+    )
+  }
+    
 export default App
