@@ -1,0 +1,42 @@
+.clock-container {
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  border-radius: 24px;
+  padding: 50px 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #334155;
+  width: fit-content;
+  margin: 100px auto;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.clock-label {
+  color: #64748b;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+/* The digital time - neon green like real digital clocks! */
+.clock-time {
+  color: #10b981;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  text-shadow: 
+    0 0 10px rgba(16, 185, 129, 0.6),
+    0 0 30px rgba(16, 185, 129, 0.4);
+  animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(16, 185, 129, 0.6), 0 0 30px rgba(16, 185, 129, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(16, 185, 129, 0.9), 0 0 45px rgba(16, 185, 129, 0.6); }
+}
