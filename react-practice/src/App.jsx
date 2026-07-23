@@ -1,12 +1,13 @@
 import { useState } from "react";
-import GradeCard from "./Day3/GradeCard";
+import EventBox from "./Day4/EventBox";
+
 
 
 function App() {
   
   return(
     <div>
-        <GradeCard/>
+        <EventBox/>
     </div>
   )
   

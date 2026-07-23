@@ -1,0 +1,76 @@
+.event-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 40px 55px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 80px auto;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Status display */
+.event-status {
+  color: #38bdf8;
+  font-size: 24px;
+  margin: 0 0 25px 0;
+  min-height: 32px;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* The interactive box */
+.event-box {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 50px 40px;
+  border-radius: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease;
+}
+
+.event-box:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 22px rgba(168, 85, 247, 0.5);
+}
+
+.event-box:active {
+  transform: scale(0.97);
+}
+
+/* Input */
+.event-input {
+  font-size: 16px;
+  padding: 13px 20px;
+  width: 280px;
+  margin-top: 25px;
+  border: 2px solid #475569;
+  border-radius: 12px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  outline: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.event-input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+.event-input::placeholder {
+  color: #64748b;
+}
