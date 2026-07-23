@@ -1,0 +1,87 @@
+.form-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 45px 55px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 100px auto;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-title {
+  color: #f8fafc;
+  font-size: 24px;
+  margin: 0 0 25px 0;
+}
+
+/* Form row */
+.simple-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Input */
+.form-input {
+  font-size: 16px;
+  padding: 13px 20px;
+  width: 250px;
+  border: 2px solid #475569;
+  border-radius: 12px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.form-input::placeholder {
+  color: #64748b;
+}
+
+/* Submit button */
+.form-btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  transition: all 0.25s ease;
+}
+
+.form-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.5);
+}
+
+.form-btn:active {
+  transform: scale(0.94);
+}
+
+/* Greeting */
+.form-greeting {
+  color: #10b981;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
