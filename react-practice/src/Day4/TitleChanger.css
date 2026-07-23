@@ -1,0 +1,51 @@
+.title-container {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 45px 60px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #475569;
+  width: fit-content;
+  margin: 100px auto;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title-heading {
+  color: #94a3b8;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.title-count {
+  color: #38bdf8;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+.title-btn {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 13px 35px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  transition: all 0.25s ease;
+}
+
+.title-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(168, 85, 247, 0.5);
+}
+
+.title-btn:active {
+  transform: scale(0.94);
+}
